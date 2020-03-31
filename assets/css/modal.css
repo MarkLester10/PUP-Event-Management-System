@@ -1,0 +1,133 @@
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  display: block;
+  overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-content {
+  /* background: linear-gradient(to right top, #136a8a, #267871); */
+  /* background-color: rgb(233, 233, 233); */
+  background-color: rgb(30, 31, 32);
+  text-align: center;
+  margin: 10% auto;
+  width: 350px;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  animation: modalopen 1s ease;
+  z-index: 999;
+  position: relative;
+  animation: slide 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal .modal-content h1 {
+  padding: 1rem;
+  font-size: 20px !important;
+  color: #fff;
+  letter-spacing: 2px;
+  /* text-transform: uppercase; */
+  font-size: 30px;
+}
+.modal .modal-content span {
+  color: #b39ddb;
+}
+
+.modal .modal-content img {
+  width: 70px;
+  animation: bounce 0.5s ease-in-out infinite;
+  margin: 0 auto;
+}
+.modal .modal-content img.welcome {
+  width: 250px;
+  animation: none;
+  border-radius: 50%;
+}
+
+.modal .modal-content p {
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+}
+
+.modal .modal-content .modal-form {
+  position: relative !important;
+  top: 20px;
+  height: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.modal .modal-content .modal-form .confirm,
+.modal .modal-content .modal-form .cancel {
+  padding: 0.5em 1.5rem;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  color: #ffff;
+  position: absolute;
+  top: 0;
+}
+
+.modal .modal-content .modal-form .confirm {
+  background: rgba(239, 83, 80, 1);
+  left: 5%;
+}
+
+.modal .modal-content .modal-form .cancel {
+  background-color: rgb(156, 156, 156);
+  left: 53%;
+}
+
+.modal .modal-content .modal-form .cancel:hover,
+.modal .modal-content .modal-form .confirm:hover {
+  transform: scale(0.95) !important;
+}
+
+.modal .modal-content .cancel:focus,
+.modal .modal-content .confirm:focus {
+  outline: none;
+}
+
+.modal .modal-content .cancel:active,
+.modal .modal-content .confirm:active {
+  transform: scale(0.75) !important;
+}
+
+@keyframes bounce {
+  10% {
+    transform: rotateZ(10deg);
+  }
+
+  30% {
+    transform: rotateZ(30deg);
+  }
+}

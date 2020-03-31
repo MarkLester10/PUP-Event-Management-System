@@ -1,0 +1,85 @@
+.tab-container {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgb(35, 41, 48);
+  border-radius: 5px;
+}
+
+.admin-wrapper .admin-content {
+  padding: 40px 0px 100px !important;
+  position: relative;
+}
+
+.tabs {
+  padding: 0.5rem 1rem;
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #919090;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-act {
+  border-bottom: 3px solid rgba(239, 83, 80, 1);
+  color: #dfdddd;
+}
+
+.tables {
+  margin-top: 1rem;
+  /* border-bottom: 3px solid black;
+  border-top: 3px solid black; */
+  width: 100%;
+}
+
+.tables .button {
+  position: absolute;
+  left: 86%;
+  top: 28%;
+  font-size: 14px;
+}
+
+.tables .button a {
+  /* color: #212121; */
+  transition: all 0.5s ease;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content,
+#tab-5-content,
+#tab-6-content,
+#tab-7-content,
+#tab-8-content,
+#tab-9-content,
+#tab-10-content,
+#tab-11-content {
+  display: none;
+}
+
+.table-show {
+  display: block !important;
+}
+
+td {
+  padding: 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+th {
+  padding: 12px 0;
+}
+
+tr {
+  border-bottom: 1px solid gray;
+}
+
+
+thead {
+  border-bottom: 2px solid black;
+}

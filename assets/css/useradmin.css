@@ -1,0 +1,32 @@
+.tab-container {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(35, 41, 48);
+    border-radius: 5px;
+}
+
+.tabs {
+    padding: .5rem 1rem;
+    font-size: 19px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #919090;
+}
+
+.tab-act {
+    border-bottom: 3px solid rgba(239, 83, 80, 1);
+    color: #dfdddd;
+}
+
+
+#TAB-1-CONTENT,
+#TAB-2-CONTENT {
+    display: none;
+}
+
+.table-show {
+    display: block !important;
+}
