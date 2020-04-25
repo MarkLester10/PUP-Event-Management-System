@@ -60,7 +60,7 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin'])) {
             userLogin($user);
         }
     } else {
-        $username = $_POST['username'];
+        $username = $_POST['username']; 
         $email = $_POST['email'];
         // $admin = $_POST['admin'];
     }
