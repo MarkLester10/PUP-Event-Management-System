@@ -2,11 +2,10 @@
 
 $dbHost = 'localhost';
 $dbUser = 'root';
-$dbUserPass = 'mark0710';
+$dbUserPass = '';
 $dbName = 'webiptsystem';
 
-$conn = new MySQLi($dbHost, $dbUser, $dbUserPass, $dbName);
-
+$conn = new mysqli($dbHost, $dbUser, $dbUserPass, $dbName);
 
 //Checks the connection
 

@@ -88,7 +88,7 @@ CREATE TABLE `events` (
   `description` text NOT NULL,
   `released` tinyint(4) NOT NULL,
   `raffleSystem` tinyint(4) NOT NULL,
-  `created_at` date NOT NULL DEFAULT current_timestamp(),
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `eventday` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
