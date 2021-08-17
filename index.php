@@ -66,7 +66,7 @@
         </section>
 
         <!-- today -->
-
+        <?php if(count($TodayEvents) > 0 || $nextEvent):?>
         <div class="post-slider today" style="height:95vh; margin-top:-100px;">
             <h1 class="slider-title" style="top: 3rem; color: #fff;"><?php echo $ikatlongTitle; ?>
             </h1>
@@ -100,6 +100,7 @@
                 <?php endif;?>
             </div>
         </div>
+        <?php endif;?>
         <!-- MAIN CONTENT SECTION -->
         <section id="content">
             <div class="service">
